@@ -10,7 +10,7 @@
 		3A19D75060E994B43695BA5D /* libPods-StarterAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41753E5258FE5DAFA2F96982 /* libPods-StarterAppTests.a */; };
 		755A07F91A740784002D1035 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 755A07F81A740784002D1035 /* Images.xcassets */; };
 		755A08081A740784002D1035 /* StarterAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 755A08071A740784002D1035 /* StarterAppTests.m */; };
-		755A08131A7408D1002D1035 /* StarterApp-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 755A08121A7408D1002D1035 /* StarterApp-Info.plist */; };
+		755A08131A7408D1002D1035 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 755A08121A7408D1002D1035 /* Info.plist */; };
 		755A08161A740A0B002D1035 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 755A08151A740A0B002D1035 /* AppDelegate.m */; };
 		755A081A1A740A7B002D1035 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 755A08191A740A7B002D1035 /* BaseViewController.m */; };
 		755A08201A740AC8002D1035 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 755A081F1A740AC8002D1035 /* BaseView.m */; };
@@ -42,8 +42,8 @@
 		755A08011A740784002D1035 /* StarterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		755A08061A740784002D1035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		755A08071A740784002D1035 /* StarterAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarterAppTests.m; sourceTree = "<group>"; };
-		755A08111A7407E1002D1035 /* StarterApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "StarterApp-Prefix.pch"; path = "Supporting Files/StarterApp-Prefix.pch"; sourceTree = "<group>"; };
-		755A08121A7408D1002D1035 /* StarterApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "StarterApp-Info.plist"; path = "Supporting Files/StarterApp-Info.plist"; sourceTree = "<group>"; };
+		755A08111A7407E1002D1035 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = "Supporting Files/Prefix.pch"; sourceTree = "<group>"; };
+		755A08121A7408D1002D1035 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		755A08141A740A0B002D1035 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Application/AppDelegate.h; sourceTree = "<group>"; };
 		755A08151A740A0B002D1035 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Application/AppDelegate.m; sourceTree = "<group>"; };
 		755A08181A740A7B002D1035 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = StarterApp/UI/ViewController/Main/BaseViewController.h; sourceTree = "<group>"; };
@@ -142,8 +142,8 @@
 		755A07EB1A740784002D1035 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				755A08121A7408D1002D1035 /* StarterApp-Info.plist */,
-				755A08111A7407E1002D1035 /* StarterApp-Prefix.pch */,
+				755A08121A7408D1002D1035 /* Info.plist */,
+				755A08111A7407E1002D1035 /* Prefix.pch */,
 				755A08381A741264002D1035 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -353,7 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755A08131A7408D1002D1035 /* StarterApp-Info.plist in Resources */,
+				755A08131A7408D1002D1035 /* Info.plist in Resources */,
 				755A07F91A740784002D1035 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,8 +551,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StarterApp/Supporting Files/StarterApp-Prefix.pch";
-				INFOPLIST_FILE = "StarterApp/Supporting Files/StarterApp-Info.plist";
+				GCC_PREFIX_HEADER = "StarterApp/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "StarterApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -566,8 +566,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StarterApp/Supporting Files/StarterApp-Prefix.pch";
-				INFOPLIST_FILE = "StarterApp/Supporting Files/StarterApp-Info.plist";
+				GCC_PREFIX_HEADER = "StarterApp/Supporting Files/Prefix.pch";
+				INFOPLIST_FILE = "StarterApp/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
