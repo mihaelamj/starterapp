@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  App
+
+  Created by Mihaela Mihaljević Jakić on 03/02/15.
+  Copyright (c) 2015 Mihaela Mihaljević Jakić. All rights reserved.
+*/
+
+//Generic
+"Ok" = "Ok";
+"Cancel" = "Cancel";
