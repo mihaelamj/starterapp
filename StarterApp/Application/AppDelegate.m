@@ -45,12 +45,12 @@
     [self configureApplication];
     
     //add delay to show the launch screen
-    [NSThread sleepForTimeInterval:5];
+    [NSThread sleepForTimeInterval:3];
     
     [self.window makeKeyAndVisible];
-    return YES;
     
     FWLog(@"Hello");
+    
     return YES;
 }
 
