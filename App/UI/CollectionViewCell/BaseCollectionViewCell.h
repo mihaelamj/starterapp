@@ -1,5 +1,5 @@
 //
-//  BaseTableViewCell.h
+//  BaseCollectionViewCell.h
 //  StarterApp
 //
 //  Created by Mihaela Mihaljević Jakić on 24/01/15.
@@ -9,17 +9,13 @@
 #import <UIKit/UIKit.h>
 
 //auto layout
-#import <Masonry/Masonry.h>
+//#import <Masonry/Masonry.h>
 
-@interface BaseTableViewCell : UITableViewCell
+@interface BaseCollectionViewCell : UICollectionViewCell
 
 //static
-+ (CGFloat)recomendedCellHeight;
++ (CGSize)recomendedCellSize;
 + (NSString *)reuseIdentifier;
-
-//dynamic height
-- (CGFloat)realHeightWithCustomObject:(id)customObject;
-- (CGFloat)realHeight;
 
 //abstract
 - (void)customize:(id)customObject; //abstract
@@ -27,6 +23,7 @@
 //template methods
 - (void)addCustomSubviews; //abstract
 - (void)setSubviewConstraints; //abstract
-- (void)customizeViews; //abstract
+
+- (CGSize)actualSize;
 
 @end

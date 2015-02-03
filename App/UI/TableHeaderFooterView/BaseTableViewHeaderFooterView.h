@@ -1,5 +1,5 @@
 //
-//  BaseSubview.h
+//  BaseTableViewHeaderFooterView.h
 //  StarterApp
 //
 //  Created by Mihaela Mihaljević Jakić on 24/01/15.
@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 
 //auto layout
-#import <Masonry/Masonry.h>
+//#import <Masonry/Masonry.h>
 
-@interface BaseSubview : UIView
+@interface BaseTableViewHeaderFooterView : UITableViewHeaderFooterView
 
 + (CGFloat)recomendedHeight;
++ (NSString *)reuseIdentifier;
 
-- (CGFloat)realHeight;
+- (void)customize:(id)customObject;
 
 @end

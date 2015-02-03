@@ -1,6 +1,6 @@
 platform :ios, "7.0"
 
-target "StarterApp" do
+target "App" do
 
 pod 'AFNetworking', '~> 2.2'
 pod 'AFNetworkActivityLogger', '~> 2.0'
@@ -12,7 +12,6 @@ pod 'SDWebImage', '~> 3.7.1'
 
 end
 
-target :StarterAppTests, :exclusive => true do
+target :AppTests, :exclusive => true do
   pod 'Kiwi'
 end
-
